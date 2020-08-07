@@ -71,7 +71,35 @@ public class Lab3_HectorReyes_NoelMartinez {
                     }
                     break;//AQUI TERMINA LINEA DE ONASIS - OSEA LINEA 72 FINAL DE ONASIS
                 case 2://AQUI EMPIEZA LINEA DE NOEL  - OSEA LINEA DE NOEL EMPIEZA EN 73
-
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+           
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     break;
                 case 3:
                     break;
