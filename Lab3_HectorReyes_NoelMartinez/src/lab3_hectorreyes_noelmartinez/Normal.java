@@ -9,6 +9,9 @@ package lab3_hectorreyes_noelmartinez;
  *
  * @author Onasis Reyes
  */
-public class Normal {
+public class Normal extends Persona {
+    
+    ArrayList <Prueba> pruebas; 
+    private String descripcion;
     
 }

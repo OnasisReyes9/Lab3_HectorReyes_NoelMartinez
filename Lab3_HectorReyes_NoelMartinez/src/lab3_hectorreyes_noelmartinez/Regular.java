@@ -5,18 +5,10 @@
  */
 package lab3_hectorreyes_noelmartinez;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Onasis Reyes
  */
-public class Piso {
-    
-    private Administrador admin;
-    private Ranker evaluadores;
-    private Ranker director;
-    private ArrayList <Persona> personas = new ArrayList();
-    private int nivel;
+public class Regular {
     
 }

@@ -5,10 +5,14 @@
  */
 package lab3_hectorreyes_noelmartinez;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Onasis Reyes
  */
 public class Ranker {
+    
+    ArrayList<Prueba> pruebasEvauador = new ArrayList();
     
 }
