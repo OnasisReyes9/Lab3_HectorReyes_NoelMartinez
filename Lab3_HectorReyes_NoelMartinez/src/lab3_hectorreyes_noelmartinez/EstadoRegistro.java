@@ -9,6 +9,10 @@ package lab3_hectorreyes_noelmartinez;
  *
  * @author noelg
  */
-public class EstadoRegistro {
-  
+public class EstadoRegistro extends Persona{
+    
+    public EstadoRegistro() {
+        super();
+    }
+    
 }

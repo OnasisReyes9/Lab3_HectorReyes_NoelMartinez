@@ -11,8 +11,25 @@ import java.util.ArrayList;
  *
  * @author Onasis Reyes
  */
-public class Ranker {
+public class Ranker extends Persona {
     
     ArrayList<Prueba> pruebasEvauador = new ArrayList();
+
+    public Ranker() {
+        super();
+    }
+
+    public ArrayList<Prueba> getPruebasEvauador() {
+        return pruebasEvauador;
+    }
+
+    public void setPruebasEvauador(ArrayList<Prueba> pruebasEvauador) {
+        this.pruebasEvauador = pruebasEvauador;
+    }
+
+    @Override
+    public String toString() {
+        return "Ranker{" + "pruebasEvauador=" + pruebasEvauador + '}';
+    }
     
 }

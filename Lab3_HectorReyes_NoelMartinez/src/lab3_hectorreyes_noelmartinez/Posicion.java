@@ -9,10 +9,11 @@ package lab3_hectorreyes_noelmartinez;
  *
  * @author noelg
  */
-public class Posicion {
+public class Posicion extends Persona{
     private String nombre;
 
     public Posicion() {
+        super();
     }
 
     public Posicion(String nombre) {
