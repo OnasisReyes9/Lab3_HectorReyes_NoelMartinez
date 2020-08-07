@@ -44,10 +44,10 @@ public class Lab3_HectorReyes_NoelMartinez {
             switch (opcion) {
                 case 1:
                     if (logSuperUsuario(opcion) == true) {
-                        System.out.print("Ingrese ");
-                        
-                        
-                        
+                        System.out.print("Ingrese nombre del Administrador:");
+                        String nombreAdmin = leer.next();
+                        System.out.println("Ingrese evaluador: ");
+                        String evaluador = leer.next();
                         
                         
                         
@@ -71,35 +71,7 @@ public class Lab3_HectorReyes_NoelMartinez {
                     }
                     break;//AQUI TERMINA LINEA DE ONASIS - OSEA LINEA 72 FINAL DE ONASIS
                 case 2://AQUI EMPIEZA LINEA DE NOEL  - OSEA LINEA DE NOEL EMPIEZA EN 73
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
                     break;
                 case 3:
                     break;
