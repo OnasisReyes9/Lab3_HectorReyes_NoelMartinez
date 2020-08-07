@@ -9,6 +9,6 @@ package lab3_hectorreyes_noelmartinez;
  *
  * @author noelg
  */
-public class EstadoRegistro {
-  
+public class Prueba {
+    private String nombre; 
 }
