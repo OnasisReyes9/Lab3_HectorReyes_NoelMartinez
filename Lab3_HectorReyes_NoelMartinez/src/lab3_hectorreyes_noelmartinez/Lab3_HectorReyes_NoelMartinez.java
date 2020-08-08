@@ -275,7 +275,34 @@ public class Lab3_HectorReyes_NoelMartinez {
                         System.out.println(i + ". " + pruebas.size());
                     }
                     break;
+                    //modificar
                 case 7:
+                    if (logSuperUsuario(opcion) == true) {
+                        System.out.println("Ingrese la posicion de la prueba a modificar: ");
+                        int posPrueba = leer.nextInt();
+                        System.out.print("Ingrese nombre de la prueba: ");
+                        String nombrePrueba = leer.next();
+                        System.out.print("Ingrese la pos del evaluador (debe ser ranker): ");
+                        int posRanker = leer.nextInt();
+                        while (posRanker < 0 || posRanker >= rankers.size()) {
+                            System.out.println("Posición no válida");
+                            System.out.print("Ingrese pos del ranker a ser evaluador: ");
+                            posRanker = leer.nextInt();
+                        }
+                        System.out.print("Ingrese 1 si la prueba fue aprobada o cualquier otro "
+                                + "numero si no lo fue aprobada: ");
+                        int pruebaAprobada = leer.nextInt();
+                        String estadoPrueba = "";
+                        if (pruebaAprobada == 1) {
+                            estadoPrueba = "Aprobado c:";
+                        } else {
+                            estadoPrueba = "No Aprobado :c </3";
+                        }
+                        System.out.print("Ingrese una posición de una persona para agregar al equipo: ");
+                        int posPersona = leer.nextInt();
+                        pruebas.set(posPrueba, new Prueba(nombrePrueba, rankers.get(posRanker), estadoPrueba));
+                        pruebas.get(posPrueba).getEquipo().add(normales.get(posPersona));
+                    }
                     break;
                 case 8:
                     break;
@@ -291,7 +318,8 @@ public class Lab3_HectorReyes_NoelMartinez {
         }//fin while
 
     }
-
+    
+    //nos revento clau 
     public static boolean logSuperUsuario(int opcion) {
         boolean login = true;
         if (opcion >= 1 && opcion <= 10) {
