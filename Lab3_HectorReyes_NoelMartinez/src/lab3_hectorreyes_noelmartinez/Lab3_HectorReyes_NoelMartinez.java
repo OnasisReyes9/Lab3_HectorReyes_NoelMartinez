@@ -40,6 +40,7 @@ public class Lab3_HectorReyes_NoelMartinez {
             System.out.println("3. Agregar Persona");
             System.out.println("4. Eliminar Piso");
             System.out.println("4. Eliminar Persona");
+            System.out.println("5. Informe Pruebas");
             int opcion = leer.nextInt();
             System.out.println("");
             switch (opcion) {
@@ -253,22 +254,21 @@ public class Lab3_HectorReyes_NoelMartinez {
                     }
                     break;
                 case 4://HOLIS CLAU
-                    System.out.println("Piso: ");
-                    for (Object o : torres) {
-                        if (o instanceof Piso) {
-                            System.out.println(torres.indexOf(o) + "- " + o + "\n");
-                        }
+                    if (logSuperUsuario(opcion) == true) {
                     System.out.print("Ingrese la posición de la torre que desa eliminarle un piso: ");
-                    int posTorre = leer.nextInt();
-                    System.out.print("Ingrese la posición de la persona que desea eliminar: ");
-                    int posEliminar = leer.nextInt();
-                    
+                        int posTorre = leer.nextInt();
+                        System.out.print("Ingrese la posición de la persona que desea eliminar: ");
+                        int posEliminar = leer.nextInt();
+                        torres.get(posTorre).getPersonas().remove(posEliminar);
                     }
                     break;
                 case 5:
-                    
+                    if (logSuperUsuario(opcion) == true) {
+                        
+                    }
                     break;
                 case 6:
+                    
                     break;
                 case 7:
                     break;
@@ -284,7 +284,10 @@ public class Lab3_HectorReyes_NoelMartinez {
             }//fin switch
         }//fin while
 
-    }
+    
+
+
+    
 
     public static boolean logSuperUsuario(int opcion) {
         boolean login = true;
