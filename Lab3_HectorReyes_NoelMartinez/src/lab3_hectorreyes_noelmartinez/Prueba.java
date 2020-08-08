@@ -64,10 +64,11 @@ public class Prueba {
     
     @Override
     public String toString() {
-        return "Informe de la Prueba" + " Nombre de la Prueba" + nombrePrueba 
-                + "\nevaluadorPrueba=" + evaluadorPrueba 
-                + ", equipo=" + equipo 
-                + ", estado=" + estado + '}';
+        return "Informe de la Prueba" + nombrePrueba 
+                + "\nEvaluador" + evaluadorPrueba
+                +"            Equipo:  " 
+                + "\nNombre de la persona normal -" + equipo 
+                + ", Estado: " + estado ;
     }
     
 }
