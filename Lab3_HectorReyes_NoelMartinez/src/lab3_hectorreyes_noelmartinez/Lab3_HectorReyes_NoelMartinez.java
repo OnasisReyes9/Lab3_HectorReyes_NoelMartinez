@@ -38,9 +38,10 @@ public class Lab3_HectorReyes_NoelMartinez {
             System.out.println("1. Agregar Piso");
             System.out.println("2. Agregar Prueba");
             System.out.println("3. Agregar Persona");
-            System.out.println("4. Eliminar Piso");
             System.out.println("4. Eliminar Persona");
-            System.out.println("5. Informe Pruebas");
+            System.out.println("5. Eliminar Prueba");
+            System.out.println("6. Listar Pruebas");
+            //System.out.println("5. Informe Pruebas");
             int opcion = leer.nextInt();
             System.out.println("");
             switch (opcion) {
@@ -255,20 +256,24 @@ public class Lab3_HectorReyes_NoelMartinez {
                     break;
                 case 4://HOLIS CLAU
                     if (logSuperUsuario(opcion) == true) {
-                    System.out.print("Ingrese la posición de la torre que desa eliminarle un piso: ");
+                        System.out.print("Ingrese la posición de la torre que desa eliminarle una persona: ");
                         int posTorre = leer.nextInt();
                         System.out.print("Ingrese la posición de la persona que desea eliminar: ");
                         int posEliminar = leer.nextInt();
                         torres.get(posTorre).getPersonas().remove(posEliminar);
                     }
                     break;
-                case 5:
+                case 5://eliminar prueba
                     if (logSuperUsuario(opcion) == true) {
-                        
+                        System.out.print("Ingrese pos de la prueba a eliminar: ");
+                        int posPrueba = leer.nextInt();
+                        pruebas.remove(posPrueba);
                     }
                     break;
                 case 6:
-                    
+                    for (int i = 0; i < pruebas.size(); i++) {
+                        System.out.println(i + ". " + pruebas.size());
+                    }
                     break;
                 case 7:
                     break;
@@ -282,12 +287,10 @@ public class Lab3_HectorReyes_NoelMartinez {
                     System.out.println("");
                     break;
             }//fin switch
+            System.out.println("");
         }//fin while
 
-    
-
-
-    
+    }
 
     public static boolean logSuperUsuario(int opcion) {
         boolean login = true;
