@@ -68,6 +68,10 @@ public class Piso {
     public void setPersonas(ArrayList<Normal> personas) {
         this.personas = personas;
     }
+    
+    public void añadirRanker(Ranker ranker){
+        evaluadores.add(ranker);
+    }
 
     @Override
     public String toString() {

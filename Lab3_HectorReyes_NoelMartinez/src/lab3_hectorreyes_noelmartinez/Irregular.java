@@ -10,5 +10,10 @@ package lab3_hectorreyes_noelmartinez;
  * @author Onasis Reyes
  */
 public class Irregular extends EstadoRegistro {
+
+    public Irregular() {
+    }
+    
+    
     
 }

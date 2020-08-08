@@ -58,6 +58,10 @@ public class Prueba {
         this.estado = estado;
     }
 
+    public void añadirPersonaAlEquipo(Normal persona){
+        equipo.add(persona);
+    }
+    
     @Override
     public String toString() {
         return "Prueba{" + "nombrePrueba=" + nombrePrueba + ", evaluadorPrueba=" + evaluadorPrueba + ", equipo=" + equipo + ", estado=" + estado + '}';

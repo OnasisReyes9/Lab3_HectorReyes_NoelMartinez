@@ -30,10 +30,6 @@ public class Ranker extends Persona {
     public void setPruebasEvauador(ArrayList<Prueba> pruebasEvauador) {
         this.pruebasEvaluador = pruebasEvauador;
     }
-    
-    public void añadirRanker(){
-        
-    }
 
     @Override
     public String toString() {
