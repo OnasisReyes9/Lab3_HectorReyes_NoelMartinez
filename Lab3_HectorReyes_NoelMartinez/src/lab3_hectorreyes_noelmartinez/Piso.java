@@ -14,18 +14,17 @@ import java.util.ArrayList;
 public class Piso {
     
     private String admin;
-    private Ranker evaluadores;
     private Ranker director;
     private int nivel;
-    private ArrayList <Persona> personas = new ArrayList();
+    private ArrayList <Ranker> evaluadores = new ArrayList();
+    private ArrayList <Normal> personas = new ArrayList();
 
     public Piso() {
         super();
     }
 
-    public Piso(String admin, Ranker evaluadores, Ranker director, int nivel) {
+    public Piso(String admin, Ranker director, int nivel) {
         this.admin = admin;
-        this.evaluadores = evaluadores;
         this.director = director;
         this.nivel = nivel;
     }
@@ -36,14 +35,6 @@ public class Piso {
 
     public void setAdmin(String admin) {
         this.admin = admin;
-    }
-
-    public Ranker getEvaluadores() {
-        return evaluadores;
-    }
-
-    public void setEvaluadores(Ranker evaluadores) {
-        this.evaluadores = evaluadores;
     }
 
     public Ranker getDirector() {
@@ -62,17 +53,25 @@ public class Piso {
         this.nivel = nivel;
     }
 
-    public ArrayList<Persona> getPersonas() {
+    public ArrayList<Ranker> getEvaluadores() {
+        return evaluadores;
+    }
+
+    public void setEvaluadores(ArrayList<Ranker> evaluadores) {
+        this.evaluadores = evaluadores;
+    }
+
+    public ArrayList<Normal> getPersonas() {
         return personas;
     }
 
-    public void setPersonas(ArrayList<Persona> personas) {
+    public void setPersonas(ArrayList<Normal> personas) {
         this.personas = personas;
     }
 
     @Override
     public String toString() {
-        return "Piso{" + "admin=" + admin + ", evaluadores=" + evaluadores + ", director=" + director + ", nivel=" + nivel + ", personas=" + personas + '}';
+        return "Piso{" + "admin=" + admin + ", director=" + director + ", nivel=" + nivel + ", evaluadores=" + evaluadores + ", personas=" + personas + '}';
     }
     
 }

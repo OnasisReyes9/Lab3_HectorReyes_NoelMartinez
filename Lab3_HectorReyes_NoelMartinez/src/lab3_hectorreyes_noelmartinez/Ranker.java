@@ -13,23 +13,31 @@ import java.util.ArrayList;
  */
 public class Ranker extends Persona {
     
-    ArrayList<Prueba> pruebasEvauador = new ArrayList();
+    ArrayList<Prueba> pruebasEvaluador = new ArrayList();
 
     public Ranker() {
         super();
     }
 
     public ArrayList<Prueba> getPruebasEvauador() {
-        return pruebasEvauador;
+        return pruebasEvaluador;
+    }
+
+    public Ranker(String nombre, Posicion posiciones, long identificacion, EstadoRegistro estadoRegistro) {
+        super(nombre, posiciones, identificacion, estadoRegistro);
     }
 
     public void setPruebasEvauador(ArrayList<Prueba> pruebasEvauador) {
-        this.pruebasEvauador = pruebasEvauador;
+        this.pruebasEvaluador = pruebasEvauador;
+    }
+    
+    public void añadirRanker(){
+        
     }
 
     @Override
     public String toString() {
-        return "Ranker{" + "pruebasEvauador=" + pruebasEvauador + '}';
+        return "Ranker{" + "pruebasEvauador=" + pruebasEvaluador + '}';
     }
     
 }
